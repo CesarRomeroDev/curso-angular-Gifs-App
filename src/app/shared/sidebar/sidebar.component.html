@@ -3,7 +3,8 @@
     <h3 style="color: aqua;">Gifs-App</h3>
     <hr class="text-white">
     <div class="list-group list-reset">
-      <a class="list-group-item list-group-item-action" href="#">Dashboard</a>
+      <a *ngFor="let item of historial " class="list-group-item list-group-item-action" href="#">{{ item | titlecase  }}</a>  <!--agregamos un ngFor para consumir la informacion de historial que viene de sidebar.component.ts-->
+      <!--titlecase para hacer la primera letra en mayusculas-->
     </div>
   </div>
   <!--End Sidebar-->
