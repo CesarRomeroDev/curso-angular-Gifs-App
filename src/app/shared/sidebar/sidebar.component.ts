@@ -12,6 +12,10 @@ export class SidebarComponent {
   }
 
   constructor( private gifsService: GifsService ) {}  // se consume informacion que viene de busqueda.component.ts
+
+  buscar( termino: string ){
+    this.gifsService.buscarGifs(termino);
+  }
   
 
 }
